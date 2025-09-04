@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Enigma of Hoolaman Zimanoif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styles for a Sleek Look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A2342; /* A deep, royal blue */
+            color: #E0E0E0; /* Soft white for readability */
+            overflow-x: hidden;
+        }
+
+        /* Gold text color utility */
+        .text-gold {
+            color: #FFD700;
+        }
+
+        /* Gold border color utility */
+        .border-gold {
+            border-color: #FFD700;
+        }
+
+        /* Custom button styling */
+        .btn-cta {
+            background: linear-gradient(145deg, #FFD700, #DAA520);
+            color: #0A2342;
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+            border: 2px solid #FFD700;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        }
+        
+        /* Entrance animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        /* Staggered animation for content blocks */
+        .slide-in-up {
+            opacity: 0;
+            animation: slideInUp 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-6 py-12 md:py-24 max-w-4xl">
+
+        <!-- Header Section -->
+        <header class="text-center mb-16 fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold text-gold mb-2 tracking-tight">They Said It Wasn't Real</h1>
+            <p class="text-lg md:text-2xl font-light text-gray-300">An Introduction to the Hoolaman Zimanoif</p>
+        </header>
+
+        <!-- Content Sections -->
+        <main>
+            <!-- Section 1: The Quantum Quirk -->
+            <section class="mb-12 slide-in-up" style="animation-delay: 200ms;">
+                <h2 class="text-2xl md:text-3xl font-bold text-gold border-b-2 border-gold pb-2 mb-4">A Quantum Quirk of Nature</h2>
+                <p class="text-base md:text-lg leading-relaxed">
+                    The Hoolaman Zimanoif is not a creature of flesh and bone, but an entity of pure, unfiltered paradox. Scholars—the ones they tried to silence—theorize it exists only when unobserved, subsisting on the resonant frequency of forgotten television theme songs. Its physical form, when it dares to collapse probability into a visible state, is said to be a shimmering vortex of misplaced keys, single socks, and the lingering scent of ozone after a summer storm.
+                </p>
+            </section>
+
+            <!-- Section 2: Auditory Hallucinations -->
+            <section class="mb-12 slide-in-up" style="animation-delay: 400ms;">
+                <h2 class="text-2xl md:text-3xl font-bold text-gold border-b-2 border-gold pb-2 mb-4">Echoes in the Static</h2>
+                <p class="text-base md:text-lg leading-relaxed">
+                    Have you ever heard a faint, melodic whistling on a moonless night, a tune you almost recognize but can't quite place? That is the call of the Zimanoif. It communicates through the auditory blind spots in our perception, weaving its intentions into the static between radio stations. It is said that listening to an AM radio tuned to a dead channel for precisely 73 minutes will reveal not its voice, but the sudden, unshakable knowledge of where every bird in a five-mile radius is currently sleeping. The information is useless, yet profound.
+                </p>
+            </section>
+            
+            <!-- Section 3: The Chronos Diet -->
+            <section class="mb-16 slide-in-up" style="animation-delay: 600ms;">
+                <h2 class="text-2xl md:text-3xl font-bold text-gold border-b-2 border-gold pb-2 mb-4">A Diet of Stolen Time</h2>
+                <p class="text-base md:text-lg leading-relaxed">
+                    The Hoolaman Zimanoif does not eat. It absorbs. Its primary source of sustenance is the small, insignificant pockets of time we lose every day. The two seconds you stare blankly at a wall, the minute you spend looking for your phone while holding it, the half-second of a particularly satisfying sneeze—these are its feasts. Victims of a major Zimanoif feeding event often report a vague sense of having "missed something" and a sudden craving for lukewarm water.
+                </p>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="text-center slide-in-up" style="animation-delay: 800ms;">
+                <h3 class="text-xl md:text-2xl font-light mb-6">The archives are open. The whispers are real.</h3>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="btn-cta inline-block">
+                    Discover the Truth
+                </a>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-20 fade-in" style="animation-delay: 1000ms;">
+            <p class="text-sm text-gray-500">&copy; 2025 The Institute for Esoteric Chrono-Zoology. All rights reserved. Or are they?</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Simple script to stagger animations on scroll for elements that come into view
+        // In this case, we're applying them on load, but this makes it extensible.
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedElements = document.querySelectorAll('.slide-in-up');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
